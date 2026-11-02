@@ -1,0 +1,13 @@
+# Dependencies / build output
+node_modules/
+.next/
+target/
+*.tsbuildinfo
+.idea/
+
+# Root-level data files (not part of backend/dynamic/frontend)
+/trackappt.sql
+/Import_dynamic_appointments.xlsx
+
+# Twilio credentials for the PHP API (see twilio_config.example.php)
+/dynamic/twilio_config.php

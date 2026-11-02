@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+:root {
+  --brand: #0d6efd;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  outline: none !important;
+}
+
+@layer components {
+  .btn-primary-brand {
+    @apply inline-flex items-center justify-center gap-2 rounded bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:opacity-60 sm:text-base;
+  }
+  .btn-outline-brand {
+    @apply inline-flex items-center justify-center gap-2 rounded border-2 border-blue-600 px-4 py-2 text-sm font-semibold text-blue-600 transition hover:bg-blue-600 hover:text-white sm:text-base;
+  }
+  .form-input-base {
+    @apply w-full rounded border border-gray-300 px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:text-base;
+  }
+  .card-base {
+    @apply rounded-lg bg-white shadow;
+  }
+  .table-base {
+    @apply w-full border-collapse text-sm;
+  }
+  .table-base th {
+    @apply whitespace-nowrap border-b bg-gray-50 px-3 py-2.5 text-left font-semibold text-gray-700;
+  }
+  .table-base td {
+    @apply border-b px-3 py-2.5 align-middle text-gray-700;
+  }
+}
