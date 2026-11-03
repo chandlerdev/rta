@@ -11,3 +11,6 @@ target/
 
 # Twilio credentials for the PHP API (see twilio_config.example.php)
 /dynamic/twilio_config.php
+
+# PHP API folder is not part of this repo
+/dynamic/
