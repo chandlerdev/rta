@@ -14,3 +14,8 @@ target/
 
 # PHP API folder is not part of this repo
 /dynamic/
+
+# On a server, from a release (deploy/deploy.sh)
+/app/
+/deploy.conf
+/ecosystem.config.js

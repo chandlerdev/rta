@@ -7,7 +7,10 @@
 import CryptoJS from 'crypto-js';
 
 // Single source of truth for the API base URL — change it here only.
-export const DYNAMIC_BASE = 'https://webapp.realtimeappointment.com/api/';
+// Relative on purpose: the browser calls /api on whichever domain served the
+// page (the web server proxies /api to the backend), so one build works for
+// every site and nothing site-specific is baked into it.
+export const DYNAMIC_BASE = '/api/';
 
 export const environment = {
   production: false,
