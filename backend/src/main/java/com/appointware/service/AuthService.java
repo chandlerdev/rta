@@ -66,7 +66,7 @@ public class AuthService {
                 <p>Please go to the following page and choose a new password:</p>
                 <p><a href="%s">%s</a></p>
                 <p>Your username, in case you've forgotten: %s</p>
-                <p>Thanks for using Appointware!</p>
+                <p>Thanks for using RealtimeWare!</p>
                 <p>encoded_email: %s</p>
                 """.formatted(link, link, u.getUserName(), encodedEmail);
 

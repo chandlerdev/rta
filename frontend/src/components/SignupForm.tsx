@@ -75,7 +75,7 @@ export function SignupForm({ planId }: Props) {
       const res: any = await service.post('admin/sms/otp', {
         phone: v.phonenumber,
         region: '1',
-        content: 'Your RealTime Appointment OTP verification code',
+        content: 'Your RealtimeWare OTP verification code',
       });
       spinner.hide();
       if (res?.data?.[0]?.otp) {
@@ -179,10 +179,10 @@ export function SignupForm({ planId }: Props) {
                     className="mt-1 h-4 w-4 shrink-0 accent-[#22b14c]"
                   />
                   <span>
-                    I agree to receive one-time verification codes via SMS from RealTime Appointment (Appointware,
+                    I agree to receive one-time verification codes via SMS from RealtimeWare (Appointware,
                     operated by DESSS Inc) at the number provided. Message frequency varies. Msg &amp; data rates may apply. Reply HELP for help,
                     STOP to opt out. See our{' '}
-                    <a href="https://realtimeappointment.com/privacy-policy.html"target="_blank" rel="noopener noreferrer" className="text-[#0060f0] underline">
+                    <a href="https://realtimeware.appointware.com/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-[#0060f0] underline">
                       Privacy Policy
                     </a>{' '}
                     and Terms.

@@ -137,7 +137,7 @@ public class AppointmentService {
             AccountsPatient p = patientRepo.findById(current.getPatientIdId()).orElse(null);
             if (p != null && p.getPhone() != null && !p.getPhone().isBlank()) {
                 String name = "Hi " + safe(p.getFirstName()) + " " + safe(p.getLastName())
-                        + ", thanks for choosing RealTime Appointment. What was your experience"
+                        + ", thanks for choosing RealtimeWare. What was your experience"
                         + " with us? Please let us know: https://g.page/r/CVEoOxLT-lbwEB0/review";
                 smsService.sendSms(p.getPhone(), name);
             }

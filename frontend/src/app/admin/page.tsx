@@ -39,7 +39,7 @@ export default function LoginPage() {
     setSubmitted(true);
     spinner.show();
 
-    // Raw JSON login -> https://webapp.realtimeappointment.com/api/auth/login
+    // Raw JSON login -> https://realtimeware.appointware.com/api/auth/login
     const payload = {
       userName: values.email,
       password: values.password,
@@ -179,7 +179,7 @@ export default function LoginPage() {
             className="mx-auto w-full max-w-md"
           >
             <h4 className="py-2.5 text-center text-[26px] font-bold text-[#0060f0]">
-              RealTime Appointment
+              RealtimeWare
             </h4>
             <ul className="m-0 p-0">
               {/* Username */}

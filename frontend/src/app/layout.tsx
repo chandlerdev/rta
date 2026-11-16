@@ -3,7 +3,7 @@ import './globals.css';
 import { SpinnerProvider } from '@/components/Spinner';
 
 export const metadata: Metadata = {
-  title: 'TraKKerAppt',
+  title: 'RealtimeWare',
   description: 'Appointment tracking system',
 };
 
