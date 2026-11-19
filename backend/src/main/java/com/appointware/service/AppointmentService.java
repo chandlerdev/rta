@@ -361,6 +361,9 @@ public class AppointmentService {
     public AccountsAppointment markNoShow(Integer appointmentId) {
         AccountsAppointment a = get(appointmentId);
         a.setIsCompleted(2); // 2 == no-show in our convention
+        // The No Show screens list rows with is_show = 1 (what the calendar's
+        // No show sets), so set it here too or the row appears in no list.
+        a.setIsShow(1);
         return appointmentRepo.save(a);
     }
 
